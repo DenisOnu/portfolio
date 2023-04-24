@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denis Portfolio</title>
+    <!-- link boxicons to get icons  -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <!-- link style.css to index page  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigaion section  -->
+    <header class="header">
+        <a href="#" class="logo">iAmDenis</a>
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#resume">Resume</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+            <!-- dropdown in the navbar to show cheatsheet  -->
+            <div class="dropdown">
+                <button onclick="dropFunction()" class="dropbtn">Cheat sheets <i class='bx bxs-down-arrow'></i></button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="htmlCS.html">HTML</a>
+                  <a href="cssCS.html">CSS</a>
+                  <a href="jsCS.html">JAVASCRIPT</a>
+                </div>
+              </div>
+        </nav>
+    </header>
+    <!-- Landing page  -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, I am</h3>
+            <h1>Denis Onu</h1>
+            <h3>A <span class="multiple-text"></span></h3>
+            <p>Great expression of ingenuity through great eloquent code that stands the test of time.</p>
+            <div class="social-media">
+                <a href="#"><i class="bx bxl-facebook"></i></a>
+                <a href="#"><i class="bx bxl-twitter"></i></a>
+                <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+                <a href="#"><i class="bx bxl-linkedin"></i></a>
+            </div>
+            <a href="#" class="btn">Download CV</a>
+        </div>
+        <div class="home-img">
+            <img src="images/a1.png" alt="landing page photo">
+        </div>
+    </section>
+    <!-- About section  -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/b.png" alt="about section photo">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Frontend Developer</h3>
+            <p>Hello my friend! I am Denis & I am a Full Stack Developer with a real passion for clean, unique & efficient design made with the best practices that users enjoy.</p>
+            <p><i class='bx bxs-chevron-right' ></i> <strong>Email:</strong> denisonu7@gmail.com</p>
+            <p><i class='bx bxs-chevron-right' ></i> <strong>Phone:</strong> +1(403)401-3585</p>
+            <p><i class='bx bxs-chevron-right' ></i> <strong>Address:</strong> Calgary, Canada</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+    <!-- Services section  -->
+    <section class="services section" id="services">
+        <div class="container">
+          <div class="section-header">
+            <h3 class="heading">My <span>Services</span></h3>
+            <p class="text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias,
+              vero?
+            </p>
+          </div>
+
+          <div class="cards">
+            <div class="card-wrap">
+              <div class="card" data-card="UI/UX">
+                <div class="card-content">
+                  <i class='bx bxl-figma icon' ></i>
+                  <h3 class="title-sm">Web Design</h3>
+                  <p class="text">
+                    Transform your product ideas into reality with sleek, user-friendly designs that enhance the user experience and drive sales. 
+                  </p>
+                  <a href="#resume" class="btn small">Read more</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-wrap">
+              <div class="card" data-card="Code">
+                <div class="card-content">
+                  <i class='bx bxl-dev-to icon' ></i>
+                  <h3 class="title-sm">Web Development</h3>
+                  <p class="text">
+                    Expert web developer with a passion for crafting beautiful and responsive websites that drive results. 
+                  </p>
+                  <a href="#resume" class="btn small">Read more</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-wrap">
+              <div class="card" data-card="App">
+                <div class="card-content">
+                  <i class='bx bxl-android icon' ></i>
+                  <h3 class="title-sm">App Development</h3>
+                  <p class="text">
+                    Create a seamless mobile experience with custom-built apps that engage users, increase conversions, and reflect your brand's unique identity.
+                  </p>
+                  <a href="#resume" class="btn small">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- records section  -->
+    <div class="record" id="record">
+        <div class="container">
+                <span class="record-circle">
+                    <h2 class="recnumber">50</h2>
+                    <h4 class="rectitle">Projects</h4>
+                </span>
+                <span class="record-circle">
+                    <h2 class="recnumber">10</h2>
+                    <h4 class="rectitle">Clients</h4>
+                </span>
+                <span class="record-circle">
+                    <h2 class="recnumber">80</h2>
+                    <h4 class="rectitle">Hours</h4>
+                </span>
+                <span class="record-circle">
+                    <h2 class="recnumber">7</h2>
+                    <h4 class="rectitle">Awards</h4>
+                </span>
+        </div>
+    </div>
+<!-- resume section starts -->
+<section class="resume" id="resume">
+    <h1 class="heading">My <span>Resume</span></h1>
+    <div class="col-container">
+      <div class="col">
+        <h2>Education</h2>
+        <div class="box">
+          <span><i class='bx bxs-calendar'></i> 2023 - 2024</span>
+          <h3>Diploma: Software Development</h3>
+          <p>
+            Presently having a working knowledge of C++ programming language, its
+                conditional and looping systems. Along with the practical implementation of
+                Arduino hardware and IDE using C family programming.
+          </p>
+          <p class="university"><em>Bow Valley College</em></p>
+        </div>
+  
+        <div class="box">
+          <span><i class='bx bxs-calendar'></i> 2016 - 2021</span>
+          <h3>BSc: Mathematics &amp; Physics</h3>
+          <p>
+            Worked on a final school project using the Python programming language to
+                develop mathematical models to create an understanding of the spread of the
+                2019 coronavirus disease.
+          </p>
+          <p class="university"><em>University of Nigeria</em></p>
+        </div>
+  
+        <div class="box">
+          <span><i class='bx bxs-calendar'></i> 2019 - 2020</span>
+          <h3>Certificate: Advanced Web Development</h3>
+          <p>
+            Graduated after my completion of a capstone project that involved creating a
+                website for a cleaning and laundry service business through which customer can
+                order services, pay for these services and communicate with business owner.
+          </p>
+          <p class="university"><em>Digital Dreams Academy</em></p>
+        </div>
+      </div>
+  
+      <div class="col">
+        <h2>Experience</h2>
+        <div class="box">
+          <span><i class='bx bxs-calendar'></i> 2021 - 2022</span>
+          <h3>Full Stack Developer</h3>
+          <p>
+            <ul id="resumeList">
+              <li>Worked with senior developers and designers to create web applications using
+                HTML, CSS, JavaScript and PHP.</li>
+              <li>Helped in design and implementation of database designs. </li>
+              <li>Learned new emerging technologies and took initiative to offer technical
+                direction and creative solutions.</li>
+            </ul>
+          </p>
+          <p class="university"><em>Kegomall</em></p>
+        </div>
+  
+        <div class="box">
+          <span><i class='bx bxs-calendar'></i> 2021-2021</span>
+          <h3>Software Developer Intern</h3>
+          <p>
+            <ul id="resumeList">
+              <li>Supported development, QA and user experience staff to develop new
+                products.</li>
+              <li>Learned software engineering process improvements and best practices.</li>
+              <li>Worked with developers to identify and remove software bugs.</li>
+            </ul>
+          </p>
+          <p class="university"><em>Specstech</em></p>
+        </div>
+  
+        <div class="box">
+          <span><i class='bx bxs-calendar'></i> 2020 - 2021</span>
+          <h3>Junior Web Developer</h3>
+          <p>
+            <ul id="resumeList">
+              <li>Adhering to coding standards and development processes in developing
+                software projects for different clients</li>
+              <li>Met with customers to present mockups and collect information for adjustments.</li>
+              <li>Actively involved in developing creative design for print materials, brochures,
+                banners, and signs.</li>
+            </ul>
+          </p>
+          <p class="university">Kiadon Graphics</p>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  <!-- portfolio section  -->
+  <section class="portfolio" id="portfolio">
+    <h2 class="heading">My <span>Portfolio!</span></h2>
+    <p>Each project is given special care and attention like a child to be born. Here are some of my works.</p>
+
+    <div class="portfolio-images">
+        <span class="image-container">
+            <img class="portfolio-img" src="images/sha.jpg" alt="">
+        </span>
+        <span class="image-container">
+            <img class="portfolio-img" src="images/xo2.jpg" alt="">
+        </span>
+        <span class="image-container">
+            <img class="portfolio-img" src="images/me.jpg" alt="">
+        </span>
+        <span class="image-container">
+            <img class="portfolio-img" src="images/deri.jpg" alt="">
+        </span>
+        <span class="image-container">
+            <img class="portfolio-img" src="images/treats.png" alt="">
+        </span>
+        <span class="image-container">
+            <img class="portfolio-img" src="images/magcase1.jpg" alt="">
+        </span>
+    </div>
+</section>
+    <!-- contact section -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" name="" id="" placeholder="Full Name">
+                <input type="email" name="" id="" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" name="" id="" placeholder="Mobile Number">
+                <input type="text" name="" id="" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+    <!-- footer section  -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by Denis | All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="script.js"></script>
+</body>
+</html>
